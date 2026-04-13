@@ -3,4 +3,4 @@
 
 int daemon_start(int interval);
 
-#endif
+#endif // DAEMON_H_

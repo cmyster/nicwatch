@@ -1,4 +1,4 @@
-CC = gcc
+CC = clang
 CFLAGS = -std=c23 -Wall -Wextra -O2
 TARGET = nicwatch
 OBJS = main.o snapshot.o journal.o analysis.o daemon.o
