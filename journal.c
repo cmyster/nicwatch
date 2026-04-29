@@ -1,7 +1,6 @@
 #include "journal.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <sys/stat.h>
 #include <unistd.h>
 #include <dirent.h>
@@ -28,12 +27,12 @@ int journal_save(const NicSnapshot *snap) {
 
 NicSnapshot* journal_get_latest(void) {
     uint64_t latest_ts = 0;
-    
+
     const char *home = getenv("HOME");
     char dir_path[256];
     if (!home) return NULL;
     snprintf(dir_path, sizeof(dir_path), "%s/.nicwatch", home);
-    
+
     DIR *d = opendir(dir_path);
     if (!d) return NULL;
     struct dirent *dir;

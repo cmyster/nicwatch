@@ -1,6 +1,5 @@
 #include "analysis.h"
 #include <string.h>
-#include <stdio.h>
 
 int analysis_compare(const NicSnapshot *old_snap, const NicSnapshot *new_snap, NicDiff *diffs, int *count) {
     if (!old_snap || !new_snap) return -1;
