@@ -1,6 +1,10 @@
 CC = clang
 <<<<<<< HEAD
+<<<<<<< HEAD
 CFLAGS = -std=c23 -Wall -Wextra -O2
+=======
+CFLAGS = -std=c23 -Wall -Wextra -O3
+>>>>>>> 22156d4 (Changed gcc to clang, removed unused includes.)
 =======
 CFLAGS = -std=c23 -Wall -Wextra -O3
 >>>>>>> 22156d4 (Changed gcc to clang, removed unused includes.)
